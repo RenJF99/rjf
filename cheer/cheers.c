@@ -1,20 +1,138 @@
-//#define _CRT_SECURE_NO_WARNINGS 1
+#define _CRT_SECURE_NO_WARNINGS 1
 
 #include <stdio.h>
 #include <string.h>
+
 int main()
 {
-	int ch = 0;
-	while ((ch = getchar) != EOF)
+	int i;
+	int num = 1;
+	for (i = 2; i < 10; i++)
 	{
-		putchar(ch);
+		num *= i;
 	}
-	/*int ch = getchar();
-
-	putchar(ch);
-	printf("%c\n", ch);*/
+	printf("%d\n", num);
 	return 0;
+
 }
+
+/////////////////////////////////////////////////////////////////
+//int main()
+//{
+//	int i = 0;
+//	do
+//	{
+//		i++;
+//		if (i == 5)
+//			continue;
+//		printf("%d\n",i);
+//		
+//	} 
+//	while (i <= 10);
+//	return 0;
+//}
+
+///////////////////////////////////////////////////////////////////
+//int main()
+//{
+//	int i = 0;
+//	int k = 0;
+//	for (i = 0, k = 0; k = 0; i++, k++)
+//		k++;// 循环0次
+//	return 0;
+//}
+
+///////////////////////////////////////////////////////////////////
+
+//int main()
+//{
+//	int x, y;
+//	for (x = 0, y = 0; x < 2 && y < 5; ++x, y++)
+//	{
+//		printf("hehe\n");
+//	}
+//	return 0;
+//}
+
+//////////////////////////////////////////////////////////////////
+//int main()
+//{
+//	int i = 0;
+//	int j = 0;
+//
+//	for (i=0;i<10;i++)
+//	{
+//		for (j = 0; j < 10; j++)
+//		{
+//			printf("hehe\n");//100个hehe
+//		}
+//	}
+//
+//	return 0;
+//}
+
+////////////////////////////////////////////////////////////////////
+//int main()
+//{
+//	int i = 0;
+//	//初始化 判断     调整
+//	for (i = 1; i <= 10; i++)
+//	{
+//		if (i == 5)
+//			continue;
+//		printf("%d\n", i);
+//	}
+//	return 0;
+//}
+
+//////////////////////////////////////////////////////////////////
+//int main()
+//{
+//	int i = 0;
+//	while (i < 10)
+//	{
+//		i++;//调整
+//	}
+//	return 0;
+//}
+
+///////////////////////////////////////////////////////////////////
+//int main()
+//{
+//	/*int ch = 0;
+//	while ((ch = getchar) != EOF)
+//	{
+//		putchar(ch);
+//	}*/
+//	/*int ch = getchar();
+//
+//	putchar(ch);
+//	printf("%c\n", ch);*/
+//
+//	int ret = 0;
+//	int ch = 0;
+//	char password[20] = { 0 };
+//	printf("请输入密码:>");
+//	scanf("%s", password);
+//	while ((ch = getchar()) != '\n')
+//	{
+//		;
+//	}
+//	printf("请确认（Y/N）:>");
+//	//缓冲区还剩\n
+//	//读取一下\n
+//	ret = getchar();
+//
+//	if (ret == 'Y')
+//	{
+//		printf("确认成功\n");
+//	}
+//	else
+//	{
+//		printf("放弃确认\n");
+//	}
+//	return 0;
+//}
 
 /////////////////////////////////////////////////////////////////////////////////
 //int main()
